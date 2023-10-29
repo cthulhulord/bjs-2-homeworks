@@ -39,7 +39,7 @@ class Triangle {
 function getTriangle(side1, side2, side3) {
 	try {
 		return new Triangle(side1, side2, side3);
-	} catch {
+	} catch (error) {
 		return {
 			get perimeter () {
 				return 'Ошибка! Треугольник не существует';
