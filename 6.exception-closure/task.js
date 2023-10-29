@@ -43,7 +43,6 @@ function getTriangle(side1, side2, side3) {
 		return {
 			get perimeter() {
 				return 'Ошибка! Треугольник не существует';
-
 			},
 
 			get area() {
