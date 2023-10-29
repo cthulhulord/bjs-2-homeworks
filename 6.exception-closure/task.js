@@ -1,16 +1,16 @@
 ﻿function parseCount(parseValue) {
-			let parseResult = Number.parseFloat(parseValue);
-			if (Number.isNaN(parseResult)) {
-				throw new Error('Невалидное значение');
-			} else {
-				return parseResult;
-			}
-		}
+	let parseResult = Number.parseFloat(parseValue);
+	if (Number.isNaN(parseResult)) {
+		throw new Error('Невалидное значение');
+	} else {
+		return parseResult;
+	}
+}
 
 function validateCount(parseValue) {
 	try {
 		return parseCount(parseValue);
-		} catch (error) {
+	} catch (error) {
 		return error;
 	}
 }
@@ -41,15 +41,15 @@ function getTriangle(side1, side2, side3) {
 		return new Triangle(side1, side2, side3);
 	} catch (error) {
 		return {
-			get perimeter () {
+			get perimeter() {
 				return 'Ошибка! Треугольник не существует';
 
-			}
+			},
 
-			get area () {
+			get area() {
 				return 'Ошибка! Треугольник не существует';
 
-			}
+			},
 		}
 	}
 }
